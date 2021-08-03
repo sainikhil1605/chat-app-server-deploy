@@ -9,7 +9,7 @@ const router = require('./router');
 
 const app = express();
 const server = http.createServer(app);
-const io = socketio(server, { cors: true, origins: ["https://610955f6ade53de4413d6b04--friendly-leakey-b5b21d.netlify.app/"] });
+const io = socketio(server, { cors: true, origins: ["https://friendly-leakey-b5b21d.netlify.app/"] });
 
 app.use(cors());
 app.use(router);
